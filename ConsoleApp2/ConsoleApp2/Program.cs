@@ -1,5 +1,14 @@
 ﻿namespace ConsoleApp2
 {
+
+    class MyClass
+    {
+        public void Print(string str)
+        {
+            Console.WriteLine(str);
+        }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -113,11 +122,11 @@
             //    }   
             //}
 
-            int[] arr = { 23, 4, 3, 22, 89, 43 };
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine();
-            }
+            //int[] arr = { 23, 4, 3, 22, 89, 43 };
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine();
+            //}
 
 
 
@@ -126,8 +135,8 @@
 
 
 
-
-
+            MyClass myClass = new MyClass();
+            myClass.Print("Hello world");
 
 
         }
