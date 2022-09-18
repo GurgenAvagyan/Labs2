@@ -122,11 +122,26 @@
             //    }   
             //}
 
-            //int[] arr = { 23, 4, 3, 22, 89, 43 };
-            //for (int i = 0; i < arr.Length; i++)
-            //{
-            //    Console.WriteLine();
-            //}
+            int[] arr = { 23, 4, 3, 22, 89, 43 };
+            int countEven = 0, countOdd = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 == 0)
+                {
+                    countEven++;
+                }
+                else
+                {
+                    countOdd++;
+                }
+            }
+            Console.WriteLine("Count of even numbers equals " + countEven);
+            Console.WriteLine("Count of odd numbers equals " + countOdd);
 
 
 
@@ -135,8 +150,7 @@
 
 
 
-            MyClass myClass = new MyClass();
-            myClass.Print("Hello world");
+
 
 
         }
