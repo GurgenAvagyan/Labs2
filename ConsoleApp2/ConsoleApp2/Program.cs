@@ -122,8 +122,13 @@
             //    }   
             //}
 
-            int[] arr = { 23, 4, 3, 22, 89, 43 };
-            int countEven = 0, countOdd = 0;
+            int[] arr = {};
+            for (int i = 0; i < 6; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+                Console.WriteLine();
+            }
+            int countEven = 0, countOdd = 0, sumEven = 0, sumOdd = 0;
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write(arr[i] + " ");
@@ -134,14 +139,17 @@
                 if (arr[i] % 2 == 0)
                 {
                     countEven++;
+                    sumEven += arr[i];
                 }
                 else
                 {
                     countOdd++;
+                    sumOdd += arr[i];
                 }
             }
-            Console.WriteLine("Count of even numbers equals " + countEven);
-            Console.WriteLine("Count of odd numbers equals " + countOdd);
+            Console.WriteLine($"Count of even numbers equals {countEven} and their sum equals {sumEven}");
+            Console.WriteLine($"Count of odd numbers equals {countOdd} and their sum equals {sumOdd}");
+
 
 
 
